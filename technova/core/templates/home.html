@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo à TechNova!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEJgP4o6rihBQ4f1cu4s2b4ftff9fnbt3saJZJ0gT0fF7rpp2G+dqgUss4d3N" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    {% include 'navbar.html' %}
+
+    <header class="text-center mt-5">
+        <h1>Bem-vindo à TechNova!</h1>
+        <h2>Soluções Tecnológicas e Cursos para o Futuro.</h2>
+    </header>
+
+    <section class="text-center mt-4">
+        <p><strong>Transformando o futuro com tecnologia de ponta e capacitação profissional.</strong></p>
+        <p>Explore nossos serviços e cursos para desenvolver suas habilidades e sua empresa!</p>
+    </section>
+
+    <section class="text-center mt-4">
+        <h3>Links importantes:</h3>
+        <a class="btn btn-outline-primary" href="{% url 'servicos' %}">Serviços</a>
+        <a class="btn btn-outline-primary" href="{% url 'sobre' %}">Sobre Nós</a>
+        <a class="btn btn-outline-primary" href="{% url 'contato' %}">Contato</a>
+        <a class="btn btn-outline-primary" href="{% url 'cursos' %}">Cursos</a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka2gZJzG8Edg80kOkc7IQD3gYhJ9h9ghXtZMIYJkACGmZWI7/yksSklkU6Rik0M"
+            crossorigin="anonymous"></script>
+</body>
+</html>
