@@ -1,38 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-</head>
-<body>
-    <!-- Menu de Navegação -->
-    <nav style="background-color: #333; padding: 10px;">
-        <ul style="list-style-type: none; display: flex; justify-content: space-around;">
-            <li><a href="/" style="color: white;">Home</a></li>
-            <li><a href="/servicos" style="color: white;">Serviços</a></li>
-            <li><a href="/sobre style="color: white;">Sobre Nós</a></li>
-            <li><a href="/contato" style="color: white;">Contato</a></li>
-            <li><a href="/cursos" style="color: white;">Cursos</a></li>
-        </ul>
-    </nav>
+{% extends 'base.html' %}
 
-    <h1>Cursos</h1>
-    <ul>
-        <li>
-            <strong>Desenvolvimento Web</strong> - Curso completo de HTML, CSS, JavaScript e Python. <br>Carga horária: 120h <br>Preço: R$ 1200,00
-        </li>
-        <li>
-            <strong>Marketing Digital</strong> - Estratégias de marketing digital, SEO e mídias sociais. <br>Carga horária: 80h <br>Preço: R$ 800,00
-        </li>
-        <li>
-            <strong>Design Gráfico</strong> - Criação de identidades visuais e material gráfico. <br>Carga horária: 100h <br>Preço: R$ 900,00
-        </li>
-        <li>
-            <strong>Data Science</strong> - Introdução à ciência de dados, análise de dados e machine learning. <br>Carga horária: 150h <br>Preço: R$ 1500,00
-        </li>
-    </ul>
+{% block title %}Cursos{% endblock %}
 
-    <a href="/" style="color: #333;">Voltar à Home</a>
-</body>
-</html>
+{% block content %}
+    
+    <main>
+        <h1>Cursos da TechNova</h1>
+        <p>Confira os cursos que oferecemos para o seu desenvolvimento profissional:</p>
+        
+        <section>
+            <h2>Curso de Python para Iniciantes</h2>
+            <p>Aprenda a programar com Python, uma das linguagens mais populares do mercado de tecnologia.</p>
+        </section>
+        
+        <section>
+            <h2>Curso de Desenvolvimento Web</h2>
+            <p>Aprenda a criar websites dinâmicos e interativos com HTML, CSS, JavaScript e Django.</p>
+        </section>
+        
+        <section>
+            <h2>Curso de Inteligência Artificial</h2>
+            <p>Introdução ao desenvolvimento de sistemas inteligentes, abordando algoritmos de machine learning e deep learning.</p>
+        </section>
+    </main>
+
+{% endblock %}
